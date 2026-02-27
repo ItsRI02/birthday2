@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cake-pic.png" type="image/png">
+    <title>its your day</title>
+    
+   <link rel="stylesheet" href="styleletter.css">
+</head>
+<body>
+    <div id="container">
+        <div id="cake-canvas"></div>
+        <div id="instructions">🎂 to blow the candles press on the cake 😁 🎂</div>
+        <div id="scroll-instruction"> scroll down👇 </div>
+        <canvas id="confetti-canvas"></canvas>
+        <div id="letter">
+            <h1>Happy Birthday😁 !</h1>
+            <p>
+                Another year older… and still supporting teams that can’t touch Real Madrid or McLaren 😎.
+                Honestly, I don’t know whether to celebrate your birthday… or to mourn your taste in football and F1 😂<br>
+
+                But okay, fine — I’ll let you have your day.<br>
+
+                I hope your year is full of:<br>
+
+                Flowers 🌸 (because that’s the only thing you’ll win this year)<br>
+
+                Gardens 🌼 (you’ll need somewhere to hide after the next El Clasico)<br>
+
+                Podiums 🏁 (but dont let Red Bull let you forget who’s really fast)<br>
+
+                Dramatic Barça moments ⚽ (like Champions league semi final hhh)<br>
+
+                Even if your teams are doomed to lose… you’re still undefeated in being amazing.<br>
+                So here’s to you: my favorite rival, my favorite debate opponent, and the only person I’ll let brag about Barca and … just today 😌<br>
+
+                Happy Birthday 💛🎉 l 39ouba l 82 sna :)<br>
+
+            </p>
+        </div>
+    </div>
+
+    <div id="spacer"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // هذا يشتغل بعد أول نقرة على أي مكان في الصفحة
+document.addEventListener('click', function playMusicOnce() {
+    const audio = new Audio('Yiruma-RiverFlowsInYou.mp3');
+    audio.loop = true;
+    audio.play();
+    // نزيل الـ listener عشان ما يكرر كل مرة
+    document.removeEventListener('click', playMusicOnce);
+});
+
+  </script>
+</body>
+</html>
